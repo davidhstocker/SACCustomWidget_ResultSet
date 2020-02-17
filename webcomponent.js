@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
     `;
 
-    customElements.define('com-sap-sample-helloworld5', class HelloWorld extends HTMLElement {
+    customElements.define('com-sap-sample-resultset', class ResultSet extends HTMLElement {
 
 
 		constructor() {
@@ -13,7 +13,7 @@
             this._firstConnection = false;
             this._tagContainer;
             this._tagType = "h1";
-            this._tagText = "Hello World";
+            this._tagText = "{}";
 
             //Adding event handler for click events
 			this.addEventListener("click", event => {
@@ -60,21 +60,12 @@
         */
 
         //Getters and Setters
-        get widgetText() {
+        get resultSet() {
             return this._tagType;
         }
 
-        set widgetText(value) {
+        set resultSet(value) {
             this._tagText = value;
-        }
-
-
-        get headingType() {
-            return this._tagType;
-            }
-
-        set headingType(value) {
-            this._tagType = value;
         }
 
         // End - Getters and Setters
