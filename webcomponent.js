@@ -14,12 +14,6 @@
             this._tagContainer;
             this._tagType = "h1";
             this._tagText = "{}";
-
-            //Adding event handler for click events
-			this.addEventListener("click", event => {
-				var event = new Event("onClick");
-				this.dispatchEvent(event);
-            });
 		}
 
         //Fired when the widget is added to the html DOM of the page

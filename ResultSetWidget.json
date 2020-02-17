@@ -29,7 +29,7 @@
 			"parameters": [
 				{
 					"name": "newResultSet",
-					"type": "ResultSet[]",
+					"type": "any",
 					"description": "The new resultset to display"
 				}
 			],
