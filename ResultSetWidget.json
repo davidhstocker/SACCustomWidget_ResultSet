@@ -1,6 +1,6 @@
 {
-	"name": "Hello World Step 5",
-	"description": "Part of the hello world custom widget tutorial for SAC.  Now with a script API",
+	"name": "Result Set Demo",
+	"description": "Display a  passed Resultset",
 	"eula": "",
 	"vendor": "",
 	"license": "",
@@ -11,7 +11,7 @@
 	"webcomponents": [
         {
 			"kind": "main",
-			"tag": "com-sap-sample-helloworld",
+			"tag": "com-sap-sample-resultset",
             "url": "https://davidhstocker.github.io/SACCustomWidget_ResultSet/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
@@ -36,5 +36,6 @@
 			"body": "this.resultSet = newResultSet;"
 			}
 			
-	}
+	},
+	"events" : {}
 }
