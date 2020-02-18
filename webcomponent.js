@@ -13,7 +13,7 @@
             this._firstConnection = false;
             this._tagContainer;
             this._tagType = "h1";
-            this._tagText = "{}";
+            this._resultSet = "{}";
 		}
 
         //Fired when the widget is added to the html DOM of the page
@@ -59,7 +59,8 @@
         }
 
         set resultSet(value) {
-            this._tagText = value;
+            this._resultSet = value;
+            setABreakPointHere = "";
         }
 
         // End - Getters and Setters
@@ -71,7 +72,7 @@
 
             var shadow = window.getSelection(this._shadowRoot);
             this._tagContainer = document.createElement(this._tagType);
-            var theText = document.createTextNode(this._tagText);    
+            var theText = document.createTextNode(this._resultSet);    
             this._tagContainer.appendChild(theText); 
             this._shadowRoot.appendChild(this._tagContainer);
 
