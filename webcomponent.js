@@ -60,7 +60,6 @@
 
         set resultSet(value) {
             this._resultSet = value;
-            setABreakPointHere = "";
         }
 
         // End - Getters and Setters
